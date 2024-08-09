@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Footer Button Animation */
+.footer-link {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  margin: 0 8px;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  color: #000;
+  background-color: #007bff;
+  background-image: linear-gradient(to right, #007bff 50%, #ffffff 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+}
+
+.footer-link:hover {
+  background-position: 0 100%;
+  background-color: #ffffff;
+}
