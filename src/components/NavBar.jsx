@@ -23,113 +23,83 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="w-full flex items-center justify-between py-4 px-8 bg-gray-800 text-white">
-      <div className="flex items-center">
-        <div className="mr-4 bg-white rounded-full p-2">
-          <Link to="/">
-            <img src={avatar} alt="Profile" className="h-12 w-12" />
-          </Link>
-        </div>
-      </div>
+   <nav className="w-full bg-gray-800 text-white">
+  <div className="max-w-8xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+    {/* Avatar */}
+    <Link to="/" className="bg-white rounded-full p-1 flex items-center justify-center h-14 w-14">
+      <img
+        src={avatar}
+        alt="Profile"
+        className="h-full w-full rounded-full object-cover"
+      />
+    </Link>
 
-      {/* Mobile Menu */}
-      <div className="md:hidden">
-        {!isMobileMenuOpen && (
-          <button
-            onClick={toggleMobileMenu}
-            className="block text-gray-200 hover:text-white focus:text-white focus:outline-none"
-          >
-            <svg
-              className="h-9 w-9" // Increasing the height and width to make the icon larger
-              fill="none"
-              viewBox="0 0 24 24" // Adjusted viewBox to include more space
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3} // Increased stroke width for more spacing between bars
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        )}
-      </div>
-
-      {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-4">
-        <Link
-          to="/about"
-          className="hover:text-gray-300 hover:underline"
-          onClick={closeMobileMenu}
+    {/* Mobile Menu Button */}
+    <div className="md:hidden">
+      {!isMobileMenuOpen && (
+        <button
+          onClick={toggleMobileMenu}
+          className="text-gray-200 hover:text-white focus:outline-none"
         >
+          <svg
+            className="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      )}
+    </div>
+
+    {/* Desktop Menu */}
+    <div className="hidden md:flex items-center space-x-6">
+      <Link to="/about" className="hover:text-gray-300" onClick={closeMobileMenu}>
+        About
+      </Link>
+      <Link to="/contact" className="hover:text-gray-300" onClick={closeMobileMenu}>
+        Contact
+      </Link>
+      <Link to="/projects" className="hover:text-gray-300" onClick={closeMobileMenu}>
+        Projects
+      </Link>
+    </div>
+  </div>
+
+  {/* Mobile Menu Overlay */}
+  {isMobileMenuOpen && (
+    <div className="md:hidden fixed inset-0 bg-black bg-opacity-90 z-50">
+      <div className="flex justify-end pt-4 pr-4">
+        <button
+          onClick={toggleMobileMenu}
+          className="text-gray-400 hover:text-white focus:outline-none"
+        >
+          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div className="flex flex-col items-center justify-center h-full space-y-6">
+        <Link to="/about" className="text-xl hover:text-gray-300" onClick={closeMobileMenu}>
           About
         </Link>
-        <Link
-          to="/contact"
-          className="hover:text-gray-300 hover:underline"
-          onClick={closeMobileMenu}
-        >
+        <Link to="/contact" className="text-xl hover:text-gray-300" onClick={closeMobileMenu}>
           Contact
         </Link>
-        <Link
-          to="/projects"
-          className="hover:text-gray-300 hover:underline"
-          onClick={closeMobileMenu}
-        >
+        <Link to="/projects" className="text-xl hover:text-gray-300" onClick={closeMobileMenu}>
           Projects
         </Link>
       </div>
+    </div>
+  )}
+</nav>
 
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black bg-opacity-90 z-50">
-          <div className="flex justify-end pt-4 pr-4">
-            <button
-              onClick={toggleMobileMenu}
-              className="text-gray-500 hover:text-white focus:text-white focus:outline-none"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div className="flex flex-col items-center justify-center h-full">
-            <Link
-              to="/about"
-              className="text-xl font-semibold my-4 hover:text-gray-300"
-              onClick={closeMobileMenu}
-            >
-              About
-            </Link>
-            <Link
-              to="/contact"
-              className="text-xl font-semibold my-4 hover:text-gray-300"
-              onClick={closeMobileMenu}
-            >
-              Contact
-            </Link>
-            <Link
-              to="/projects"
-              className="text-xl font-semibold my-4 hover:text-gray-300"
-              onClick={closeMobileMenu}
-            >
-              Projects
-            </Link>
-          </div>
-        </div>
-      )}
-    </nav>
   );
 };
 

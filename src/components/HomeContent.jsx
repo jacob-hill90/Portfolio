@@ -52,22 +52,37 @@ function HomeContent() {
                 boundaries in every project!
               </p>
             </div>
-            <div className="job-info-container w-[full] md:w-2/6 border flex flex-col items-left border-gray-300 rounded-lg mb-8 sm:mb-0 mt-8 md:mt-0 md:ml-8 p-8 ">
+            <div className="job-info-container w-full md:w-2/6 border flex flex-col items-left border-gray-300 rounded-lg mb-8 sm:mb-0 mt-8 md:mt-0 md:ml-8 p-8">
               <h2 className="text-2xl text-center font-semibold mb-4">
-                Experience
+                Journey
               </h2>
+
+              <div className="mb-2">
+                <h3 className="text-lg font-semibold underline">
+                  University of Michigan
+                </h3>
+                <p className="text-base">Computer Science Student</p>
+                <p className="text-base">August 2024 – Present</p>
+              </div>
+
+              <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+              <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+              <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+
               <div className="mb-2">
                 <h3 className="text-lg font-semibold underline">
                   <a target="_blank" href="https://robotire.com/">
                     Robotire
                   </a>
                 </h3>
-                <p className="text-base"> Frontend Developer</p>
-                <p className="text-base"> October 2022 - December 2023</p>
+                <p className="text-base">Frontend Developer</p>
+                <p className="text-base">October 2022 - December 2023</p>
               </div>
+
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+
               <div className="mb-2">
                 <h3 className="text-lg font-semibold underline">
                   <a target="_blank" href="https://www.codeplatoon.org/">
@@ -75,11 +90,13 @@ function HomeContent() {
                   </a>
                 </h3>
                 <p className="text-base">Full Stack Engineering Student</p>
-                <p className="text-base"> April 2022 - September 2022</p>
+                <p className="text-base">April 2022 - September 2022</p>
               </div>
+
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+
               <div className="mb-4">
                 <h3 className="text-lg font-semibold underline">
                   <a target="_blank" href="https://www.annarborymca.org/">
@@ -87,11 +104,13 @@ function HomeContent() {
                   </a>
                 </h3>
                 <p className="text-base">Membership Service Representative</p>
-                <p className="text-base"> March 2020 - April 2022</p>
+                <p className="text-base">March 2020 - April 2022</p>
               </div>
+
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
               <div className="w-1 h-1 bg-gray-400 rounded-full mb-2"></div>
+
               <div className="mb-4">
                 <h3 className="text-lg font-semibold underline">
                   <a target="_blank" href="https://www.annarborymca.org/">
@@ -99,8 +118,9 @@ function HomeContent() {
                   </a>
                 </h3>
                 <p className="text-base">Maween</p>
-                <p className="text-base"> October 2011 - July 2016</p>
+                <p className="text-base">October 2011 - July 2016</p>
               </div>
+
               <a
                 href={rezzy}
                 target="_blank"
