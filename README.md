@@ -35,7 +35,7 @@ npm run check:routes
 npm run preview
 ```
 
-**Important:** `npm run build` produces a normal Vite build *and* renders each route into `dist/<route>/index.html`. This solves the deep-link 404 problem on GitHub Pages and gives search engines actual HTML content to crawl. In development, Vite handles navigation as usual.
+**Important:** `npm run build` produces a normal Vite build _and_ renders each route into `dist/<route>/index.html`. This solves the deep-link 404 problem on GitHub Pages and gives search engines actual HTML content to crawl. In development, Vite handles navigation as usual.
 
 If you want to locally test the final site with the same repo path as GitHub Pages, run:
 
@@ -72,7 +72,7 @@ When running in GitHub Actions, the script derives the site's public URL from th
 - `dist/sitemap.xml`;
 - `dist/robots.txt`.
 
-For best results, connect the published site to Google Search Console and submit your sitemap URL after deployment. A project hosted at `/REPOSITORY/` has some SEO limitations compared with a root-domain site. The `robots.txt` file in a repo subdirectory is *not* the domain-root robots policy; sitemap submission remains useful.
+For best results, connect the published site to Google Search Console and submit your sitemap URL after deployment. A project hosted at `/REPOSITORY/` has some SEO limitations compared with a root-domain site. The `robots.txt` file in a repo subdirectory is _not_ the domain-root robots policy; sitemap submission remains useful.
 
 ## Adding or removing a project
 

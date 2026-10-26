@@ -127,7 +127,6 @@ export default function Home() {
           <h2>
             Curious by <em>nature.</em>
             <br />
-            
           </h2>
         </div>
         <Link to="/contact/" className="button button-dark">

@@ -1,4 +1,3 @@
-
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
@@ -13,8 +12,8 @@ export default function Contact() {
           <em>conversation.</em>
         </h1>
         <p className="page-lead">
-          Have a project in mind, or want to connect about
-          software development? You can contact me here.
+          Have a project in mind, or want to connect about software development?
+          You can contact me here.
         </p>
       </section>
 
@@ -23,8 +22,8 @@ export default function Contact() {
 
         {state.succeeded ? (
           <p className="form-success" role="status">
-            Thanks for reaching out! Your message has been sent.
-            I'll get back to you soon.
+            Thanks for reaching out! Your message has been sent. I'll get back
+            to you soon.
           </p>
         ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
@@ -38,10 +37,7 @@ export default function Contact() {
                 autoComplete="name"
                 required
               />
-              <ValidationError
-                field="name"
-                errors={state.errors}
-              />
+              <ValidationError field="name" errors={state.errors} />
             </div>
 
             <div className="form-field">
@@ -54,10 +50,7 @@ export default function Contact() {
                 autoComplete="email"
                 required
               />
-              <ValidationError
-                field="email"
-                errors={state.errors}
-              />
+              <ValidationError field="email" errors={state.errors} />
             </div>
 
             <div className="form-field">
@@ -69,10 +62,7 @@ export default function Contact() {
                 placeholder="Tell me about your project or idea..."
                 required
               />
-              <ValidationError
-                field="message"
-                errors={state.errors}
-              />
+              <ValidationError field="message" errors={state.errors} />
             </div>
 
             <ValidationError errors={state.errors} />
@@ -113,8 +103,8 @@ export default function Contact() {
       </section>
 
       <p className="shell contact-note">
-        Feel free to reach out — I'm always happy to hear about
-        interesting ideas and projects.
+        Feel free to reach out. I'm always happy to hear about interesting ideas
+        and projects.
       </p>
     </>
   );
