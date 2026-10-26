@@ -17,8 +17,10 @@ export default function Home() {
             <span className="period">.</span>
           </h1>
           <p className="hero-description">
-            I'm a software developer who enjoys bringing ideas to life; From
-            full-stack web applications to low level experiments in C++.
+            I'm a software developer who truly enjoys exploring all sides of
+            programming. From building modern full-stack web applications and
+            experimenting with low level C++ to tinkering with BASIC on my Apple
+            II.
           </p>
           <div className="hero-actions">
             <Link to="/projects/" className="button button-dark">
