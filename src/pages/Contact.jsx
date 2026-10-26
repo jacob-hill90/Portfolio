@@ -14,7 +14,7 @@ export default function Contact() {
         </h1>
         <p className="page-lead">
           Have a project in mind, or want to connect about
-          software development? You can find me here.
+          software development? You can contact me here.
         </p>
       </section>
 

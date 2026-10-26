@@ -14,7 +14,7 @@ export default function Projects() {
           <div className="project-grid">
             {projects.map((project) => <ProjectCard project={project} key={project.slug} />)}
           </div>
-          <p className="projects-footnote">This is a growing collection. I add work when there's something meaningful to share.</p>
+          <p className="projects-footnote">This is a growing collection(currently a work in progress).</p>
         </div>
       </section>
     </>

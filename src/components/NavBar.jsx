@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const links = [
-  { to: '/projects/', text: 'Projects' },
   { to: '/about/', text: 'About' },
+  { to: '/projects/', text: 'Projects' },
   { to: '/contact/', text: 'Contact' },
 ];
 
@@ -30,7 +30,7 @@ export default function NavBar() {
             />
 
             <span>
-              JAKE HILL<span className="brand-punct">.</span>
+              JAKE HILL<span className="brand-punct"></span>
             </span>
           </Link>
         <button

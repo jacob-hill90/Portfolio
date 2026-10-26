@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="shell footer-inner">
         <div>
           <Link to="/" className="footer-brand">Jake Hill<span className="brand-punct">.</span></Link>
-          <p>Thoughtful software, built one project at a time.</p>
+          <p>Creating software with attention to detail.</p>
         </div>
         <div className="footer-side">
           <div className="footer-links">
