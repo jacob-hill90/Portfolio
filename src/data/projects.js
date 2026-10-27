@@ -17,7 +17,7 @@ export const projects = [
       "JWT-based registration, login, and protected routes",
       "Work in progress: location-aware catches and weather tools",
     ],
-    links: [], // Add { label: 'Source code', href: 'https://github.com/...' } when ready.
+    links: ["https://fishtories.com/"],
     visual: "water",
     featured: true,
   },
