@@ -22,19 +22,36 @@ export default function ProjectCard({ project }) {
           <Link to={`/projects/${project.slug}/`}>{project.title}</Link>
         </h3>
         <p>{project.shortDescription}</p>
+
         <div className="project-bottom">
           <div className="tags">
             {project.technologies.map((tech) => (
               <span key={tech}>{tech}</span>
             ))}
           </div>
-          <Link
-            className="arrow-link"
-            to={`/projects/${project.slug}/`}
-            aria-label={`View ${project.title} project details`}
-          >
-            ↗
-          </Link>
+
+          <div className="project-actions">
+            {project.links?.find((link) =>
+              link.href?.startsWith("https://fishtories.com"),
+            ) && (
+              <a
+                href="https://fishtories.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-live-link"
+              >
+                Live Site ↗
+              </a>
+            )}
+
+            <Link
+              className="arrow-link"
+              to={`/projects/${project.slug}/`}
+              aria-label={`View ${project.title} project details`}
+            >
+              ↗
+            </Link>
+          </div>
         </div>
       </div>
     </article>

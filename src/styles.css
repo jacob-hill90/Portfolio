@@ -1026,3 +1026,22 @@ em {
   margin-top: 2rem;
   font-size: 1.1rem;
 }
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-live-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.project-live-link:hover {
+  opacity: 0.6;
+}
