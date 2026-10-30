@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function ProjectCard({ project }) {
+  const liveLink = project.links?.find(
+    (link) => link.label === "Visit Live Website" && link.href,
+  );
+
   return (
     <article className="project-card">
       <Link
@@ -31,14 +35,13 @@ export default function ProjectCard({ project }) {
           </div>
 
           <div className="project-actions">
-            {project.links?.find((link) =>
-              link.href?.startsWith("https://fishtories.com"),
-            ) && (
+            {liveLink && (
               <a
-                href="https://fishtories.com/"
+                href={liveLink.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-live-link"
+                aria-label={`Visit ${project.title} live website (opens in a new tab)`}
               >
                 Live Site ↗
               </a>
