@@ -1,14 +1,3 @@
-
-//
-// Portfolio Projects
-//
-// Edit this file to add, remove, or reorder projects.
-// Every published project gets its own SEO-friendly
-// /projects/slug/ page.
-//
-// The static page builder picks up new entries automatically.
-//
-
 export const projects = [
   {
     slug: "fishtories",
@@ -75,13 +64,7 @@ export const projects = [
     description:
       "Joe Joe's Tailgate is a community-focused website developed using React and Vite. The application provides a centralized place for members of a recurring tailgate community to explore content and stay connected. Built with a lightweight frontend architecture, the website is designed to be easy to maintain, update, and deploy through GitHub Pages.",
 
-    technologies: [
-      "React",
-      "Vite",
-      "JavaScript",
-      "CSS",
-      "GitHub Pages",
-    ],
+    technologies: ["React", "Vite", "JavaScript", "CSS", "GitHub Pages"],
 
     highlights: [
       "Developed a responsive community website using React and Vite",
@@ -95,6 +78,11 @@ export const projects = [
         label: "Visit Live Website",
         href: "https://joejoestg.com/",
       },
+
+      {
+        label: "View GitHub Repository",
+        href: "https://github.com/jacob-hill90/joejoes4",
+      },
     ],
 
     visual: "tailgate",
@@ -102,20 +90,7 @@ export const projects = [
   },
 ];
 
-// Retrieve a project using its unique slug.
+// retrieve a project using its unique slug.
 export function getProject(slug) {
   return projects.find((project) => project.slug === slug);
 }
-
-/*
-To publish another project, add another object
-with a unique `slug`.
-
-Potential future projects:
-- C++ Walker / Surf Engine
-- Other full-stack applications
-- Software development experiments
-
-Keep descriptions accurate and update them
-as projects evolve.
-*/

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -13,6 +14,7 @@ export default function App() {
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
+      <ScrollToTop />
       <NavBar />
       <main id="main-content">
         <Routes>

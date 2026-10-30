@@ -372,6 +372,8 @@ em {
   gap: 30px;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e6e7e0;
   background: #fff;
   border-radius: 12px;
@@ -444,6 +446,9 @@ em {
   opacity: 0.8;
 }
 .project-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 26px 28px 25px;
 }
 .project-details .eyebrow {
@@ -467,8 +472,14 @@ em {
 .project-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 16px;
+  margin-top: auto;
+}
+
+.project-bottom > .tags {
+  flex: 1 1 230px;
 }
 .tags {
   display: flex;
@@ -489,6 +500,9 @@ em {
   padding: 9px 13px;
 }
 .arrow-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #d9ddd3;
   font-size: 20px;
   padding: 10px 13px;
@@ -730,12 +744,13 @@ em {
   line-height: 1.6;
 }
 .detail-prose li::before {
-  content: "â†—";
+  content: "\2197";
   color: #b57143;
   margin-right: 12px;
 }
 .detail-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 35px;
 }
@@ -1031,6 +1046,8 @@ em {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .project-live-link {
