@@ -65,14 +65,54 @@ export default function About() {
           <h3>Tools I've worked with</h3>
           <div className="tags tags-large">
             {[
+              // Programming Languages
               "JavaScript",
-              "React",
               "Python",
-              "Django",
               "C++",
               "HTML & CSS",
-              "Git",
+              "SQL",
+
+              // Frontend Development
+              "React",
               "Vite",
+              "Tailwind CSS",
+
+              // Backend Development
+              "Django",
+              "Django REST Framework",
+              "Flask",
+              "Node.js",
+              "REST APIs",
+
+              // Databases
+              "PostgreSQL",
+              "SQLite",
+
+              // Development Tools
+              "Git",
+              "GitHub",
+              "Gitlab",
+              "VS Code",
+              "Visual Studio",
+              "CMake",
+              "Xcode",
+              "AWS",
+
+              // Operating Systems
+              "macOS",
+              "Windows",
+              "Linux",
+
+              // CAD & Manufacturing
+              "Fusion 360",
+              "SOLIDWORKS",
+              "3D Modeling",
+              "CAD Design",
+              "3D Printing",
+
+              // Hardware & Other
+              "Raspberry Pi",
+              "Arduino"
             ].map((tool) => (
               <span key={tool}>{tool}</span>
             ))}
