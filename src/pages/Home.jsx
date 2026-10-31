@@ -44,51 +44,49 @@ export default function Home() {
             </div>
 
             <div className="art-code">
-              <span className="code-comment">// make something useful</span>
+              <span className="code-comment">// Struct to help you tackle any project</span>
 
               <span>
                 <b>struct</b> Developer {"{"}
               </span>
 
               <span>
-                {" "}
-                std::string name{"{"}
+                {"    "}
+                    std::string name{" = "}
                 <i>"Jake"</i>
-                {"}"};
+                ;
               </span>
               <span>
-                {" "}
-                bool curious{"{"}
+                {"    "}
+                bool adaptable{" = "}
                 <b>true</b>
-                {"}"};
+                ;
               </span>
 
               <span className="code-spacer"> </span>
 
               <span>
-                {" "}
-                std::string mindset{"{"}
+                {"    "}
+                std::string mindset{" = "}
                 <i>"always learning"</i>
-                {"}"};
+                ;
               </span>
               <span>
-                {" "}
-                std::string mission{"{"}
-                <i>"build things that matter"</i>
-                {"}"};
+                {"    "}
+                std::string mission{" = "}
+                <i>"build software with care"</i>
+                ;
               </span>
 
               <span className="code-spacer"> </span>
 
               <span>
-                {" "}
-                <b>bool</b> isFinished() const {"{"}
+                {"    "}
+                <b>const std::string</b> passion {" = "}
+                <i>"computer science"</i>
+                ;
               </span>
-              <span>
-                {" "}
-                <b>return</b> <b>false</b>;
-              </span>
-              <span> {"}"}</span>
+
 
               <span>{"}"};</span>
               <span className="code-cursor">▮</span>
