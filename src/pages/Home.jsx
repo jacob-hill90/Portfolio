@@ -82,7 +82,7 @@ export default function Home() {
 
               <span>
                 {"    "}
-                <b>const std::string</b> passion {" = "}
+                <b>const std::string</b> passion{" = "}
                 <i>"computer science"</i>
                 ;
               </span>
