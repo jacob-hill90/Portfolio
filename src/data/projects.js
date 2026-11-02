@@ -28,12 +28,12 @@ export const projects = [
 
     highlights: [
       "Developed a full-stack React application connected to a Django REST API",
-      "Implemented secure session-based authentication, registration, and protected user profiles",
+      "Implemented secure session based authentication, registration, and protected user profiles",
       "Built a fishing journal with catch creation, editing, deletion, and personalized statistics",
       "Integrated interactive fishing maps with private and publicly shared catch locations",
       "Implemented catch photo uploads and profile pictures using private Cloudflare R2 storage",
       "Created a searchable fish species database with reference images and autocomplete",
-      "Integrated location-based current weather conditions and multi-day forecasts using Open-Meteo",
+      "Integrated location based current weather conditions and multi-day forecasts using Open-Meteo",
       "Deployed a containerized production application using Docker, Render, and Neon PostgreSQL",
     ],
 
@@ -59,10 +59,10 @@ export const projects = [
     year: "02",
 
     shortDescription:
-      "A React-powered website built for a recurring tailgate community, providing an easy way to explore and stay connected with community content.",
+      "A React powered website built for a recurring tailgate event, providing an easy way to explore and stay connected with thecommunity event.",
 
     description:
-      "Joe Joe's Tailgate is a community-focused website developed using React and Vite. The application provides a centralized place for members of a recurring tailgate community to explore content and stay connected. Built with a lightweight frontend architecture, the website is designed to be easy to maintain, update, and deploy through GitHub Pages.",
+      "Joe Joe's Tailgate is an event inspired website developed using React and Vite. The application provides a centralized place for members of a recurring tailgate event to explore content and stay connected. Built with a lightweight frontend architecture, the website is designed to be easy to maintain, update, and deploy through GitHub Pages.",
 
     technologies: ["React", "Vite", "JavaScript", "CSS", "GitHub Pages"],
 
