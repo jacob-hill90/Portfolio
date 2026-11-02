@@ -59,7 +59,7 @@ export const projects = [
     year: "02",
 
     shortDescription:
-      "A React powered website built for a recurring tailgate event, providing an easy way to explore and stay connected with thecommunity event.",
+      "A React powered website built for a recurring tailgate event, providing an easy way to explore and stay connected with the community event.",
 
     description:
       "Joe Joe's Tailgate is an event inspired website developed using React and Vite. The application provides a centralized place for members of a recurring tailgate event to explore content and stay connected. Built with a lightweight frontend architecture, the website is designed to be easy to maintain, update, and deploy through GitHub Pages.",
