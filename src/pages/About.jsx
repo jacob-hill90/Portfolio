@@ -95,6 +95,7 @@ export default function About() {
               "VS Code",
               "Visual Studio",
               "CMake",
+              "Docker",
               "Xcode",
               "AWS",
 
